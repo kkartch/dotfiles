@@ -28,6 +28,8 @@ brew "neovim"
 brew "ripgrep"
 brew "fd"
 brew "lazygit"
+brew "protobuf"
+brew "grpcurl"
 
 # Utilities
 brew "tmux"
