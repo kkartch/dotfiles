@@ -1,12 +1,17 @@
-require('nvim-treesitter.configs').setup({
-  ensure_installed = { "elixir", "heex", "eex", "vim", "lua", "html" },
-
-  sync_install = false,
-  auto_install = true,
-  highlight = {
-    enable = true,
-  },
-  indent = {
-    enable = false,
-  },
-})
+-- THIS MAYBE SHOULD BE DELETED UNLESS I FIND A WAY TO MOVE THIS CONFIG
+-- out of the core/plugins/init.lua file and into a more Lazy compatible format here
+--
+--
+-- 
+-- require('nvim-treesitter.configs').setup({
+--   ensure_installed = { "elixir", "heex", "eex", "vim", "lua", "html", "svelte", "typescript" },
+--
+--   sync_install = false,
+--   auto_install = true,
+--   highlight = {
+--     enable = true,
+--   },
+--   indent = {
+--     enable = false,
+--   },
+-- })

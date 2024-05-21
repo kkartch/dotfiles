@@ -118,7 +118,7 @@ return {
     },
 
     templates = {
-      subdir = "04-templates",
+      subdir = "05-templates",
     },
 
     completion = {
@@ -206,39 +206,43 @@ return {
         action = go_day_back(),
         opts = { buffer = true },
       },
+      ["<leader>T"] = {
+        action = function() return "<cmd>ObsidianTags<CR>" end,
+        opts = { buffer = true, expr = true },
+      },
       ["<leader>bl"] = {
         action = function() return "<cmd>ObsidianBacklinks<CR>" end,
         opts = { buffer = true, expr = true },
       },
-      ["<leader>oq"] = {
+      ["<leader>q"] = {
         action = function() return "<cmd>ObsidianQuickSwitch<CR>" end,
         opts = { buffer = true, expr = true },
       },
-      ["<leader>os"] = {
+      ["<leader>s"] = {
         action = function() return "<cmd>ObsidianSearch<CR>" end,
         opts = { buffer = true, expr = true },
       },
-      ["<leader>on"] = {
+      ["<leader>n"] = {
         action = function() return "<cmd>ObsidianNew<CR>" end,
         opts = { buffer = true, expr = true },
       },
-      ["<leader>ov"] = { -- This doesnt work will need to create local func
+      ["<leader>v"] = { -- This doesnt work will need to create local func
         action = function() return "<cmd>ObsidianFollowLink vsplit<CR>" end,
         opts = { buffer = true, expr = true },
       },
-      ["<leader>ol"] = {
+      ["<leader>l"] = {
         action = function() return "<cmd>ObsidianLink<CR>" end,
         opts = { buffer = true, expr = true },
       },
-      ["<leader>o/"] = {
+      ["<leader>/"] = {
         action = function() return "<cmd>ObsidianLinkNew<CR>" end,
         opts = { buffer = true, expr = true },
       },
-      ["<leader>oa"] = {
+      ["<leader>a"] = {
         action = function() return "<cmd>ObsidianLinks<CR>" end,
         opts = { buffer = true, expr = true },
       },
-      ["<leader>oi"] = {
+      ["<leader>i"] = {
         action = function() return "<cmd>ObsidianPasteImg<CR>" end,
         opts = { buffer = true, expr = true },
       },
