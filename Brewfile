@@ -19,6 +19,7 @@ brew "liquidprompt"
 brew "zoxide"
 
 # Development
+brew "asdf"
 brew "erlang"
 brew "elixir"
 brew "elixir-ls"

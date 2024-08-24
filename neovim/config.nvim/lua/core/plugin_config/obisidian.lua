@@ -1,4 +1,4 @@
-vim.opt.conceallevel = 1
+-- vim.opt.conceallevel = 1
 
 
 local go_day_back = function()

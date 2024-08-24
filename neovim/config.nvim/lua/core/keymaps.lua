@@ -26,11 +26,11 @@ vim.keymap.set('n', 'gho', '^lct>') -- create open tag from copied tag
 vim.keymap.set('n', 'ghc', 'yyp^a/<esc>Eldt>') -- create closing tag from current tag
 
 -- Copilot Chat
-vim.keymap.set({'n', 'v'}, '<leader>aa', ":'<,'>CopilotChatToggle<CR>")
-vim.keymap.set({'n', 'v'}, '<leader>ar', ":'<,'>CopilotChatReview<CR>")
-vim.keymap.set({'n', 'v'}, '<leader>ae', ":'<,'>CopilotChatExplain<CR>")
-vim.keymap.set({'n', 'v'}, '<leader>af', ":'<,'>CopilotChatFix<CR>")
-vim.keymap.set({'n', 'v'}, '<leader>ao', ":'<,'>CopilotChatOptimize<CR>")
-vim.keymap.set({'n', 'v'}, '<leader>ad', ":'<,'>CopilotChatDocs<CR>")
-vim.keymap.set({'n', 'v'}, '<leader>at', ":'<,'>CopilotChatTests<CR>")
-vim.keymap.set({'n', 'v'}, '<leader>ac', ":'<,'>CopilotChatCommitStaged<CR>")
+vim.keymap.set({'n', 'v'}, '<leader>aa', ":CopilotChatToggle<CR>")
+vim.keymap.set({'n', 'v'}, '<leader>ar', ":CopilotChatReview<CR>")
+vim.keymap.set({'n', 'v'}, '<leader>ae', ":CopilotChatExplain<CR>")
+vim.keymap.set({'n', 'v'}, '<leader>af', ":CopilotChatFix<CR>")
+vim.keymap.set({'n', 'v'}, '<leader>ao', ":CopilotChatOptimize<CR>")
+vim.keymap.set({'n', 'v'}, '<leader>ad', ":CopilotChatDocs<CR>")
+vim.keymap.set({'n', 'v'}, '<leader>at', ":CopilotChatTests<CR>")
+vim.keymap.set({'n', 'v'}, '<leader>ac', ":CopilotChatCommitStaged<CR>")

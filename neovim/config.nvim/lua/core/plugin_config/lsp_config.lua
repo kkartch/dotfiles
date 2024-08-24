@@ -112,10 +112,11 @@ cmp.setup {
     -- end, { 'i', 's' }),
   },
   sources = {
-    { name = 'luasnip' },
-    { name = 'nvim_lua' },
-    { name = 'nvim_lsp' },
-    { name = 'buffer', keyword_length = 5, max_item_count = 3 },
+    { name = 'copilot', group_index = 2 },
+    { name = 'luasnip', group_index = 2 },
+    { name = 'nvim_lua', group_index = 2 },
+    { name = 'nvim_lsp', group_index = 2 },
+    { name = 'buffer', keyword_length = 5, max_item_count = 3, group_index = 2 },
   },
   formatting = {
     format = lspkind.cmp_format({
@@ -127,6 +128,7 @@ cmp.setup {
         path = "[path]",
         luasnip = "[snip]",
         cmdline = "[cmd]",
+        copilot = "[cop]",
       },
       mode = 'symbol', -- show only symbol annotations
       maxwidth = 50, -- prevent the popup from showing more than provided characters 
