@@ -2,5 +2,7 @@
     "terminal.integrated.shell.osx": "/bin/zsh",
     "editor.fontLigatures": true,
     "workbench.colorTheme": "One Dark Pro",
-    "github.copilot.chat.localeOverride": "en"
+    "github.copilot.chat.localeOverride": "en",
+    "git.suggestSmartCommit": false,
+    "terminal.integrated.scrollback": 10000
 }

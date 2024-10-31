@@ -40,6 +40,7 @@ brew "tmux"
 brew "k9s"
 brew "tree"
 brew "mas"
+brew "xclip"
 # brew "hugo"
 
 # Applications
