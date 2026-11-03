@@ -40,6 +40,7 @@ brew "protobuf"
 brew "grpcurl"
 
 # Utilities
+brew "expect"
 brew "tmux"
 brew "k9s"
 brew "tree"

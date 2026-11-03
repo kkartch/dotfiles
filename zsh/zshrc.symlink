@@ -54,10 +54,6 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Fig post block. Keep at the bottom of this file.
 # [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
 
@@ -73,3 +69,20 @@ if [ -f '/Users/kyle/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kyle/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kyle/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="$HOME/.luarocks/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/kyle/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Auto-activate Python venvs when entering directories
+auto_venv() {
+  if [[ -d .venv ]] && [[ -f .venv/bin/activate ]]; then
+    source .venv/bin/activate
+  fi
+}
+chpwd_functions=(${chpwd_functions[@]} "auto_venv")
